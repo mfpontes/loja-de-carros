@@ -38,7 +38,7 @@ body{
 	font-size: 20px;
 	font-family: Impact, Haettenschweiler, sans-serif;
 	color: rgb(230, 42, 255);
-	text-shadow: -2px 2px 3px rgb(189, 234, 255)
+	text-shadow: -1px 1px 1px rgb(189, 234, 255)
 }
 
 .navbar a:hover{
@@ -60,7 +60,7 @@ p{
 	top: 10%;
 	left: 50%;
 	margin: 0 0 0 -20em;
-	text-shadow: -2px 1px 5px rgb(189, 234, 255);
+	text-shadow: -1px 1px 1px rgb(189, 234, 255);
 }
 
 p .span{
@@ -69,7 +69,7 @@ p .span{
   	padding: .10em 0 .125em;
 	display: block;
 	margin: 0 auto;
-  	text-shadow: 0 0 50px rgba(250, 250, 250, 0.90);
+  	text-shadow: 0 0 60px rgba(250, 250, 250, 0.90);
 
   	background: url("animated-text-fill.png") repeat-y;
 	-webkit-background-clip: text;
