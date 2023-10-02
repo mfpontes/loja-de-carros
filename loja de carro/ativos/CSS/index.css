@@ -1,15 +1,11 @@
-@font-face {
-    font-family:'drive';
-    src: url('/ativos/Fontes/tt-marks-rough-shadow-extrabold.otf');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
-/*{
+*{
     margin: 0;
     padding: 0;
-    font-family: 'drive', sans-serif;
-}*/
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 
 body{
     height: 100%;
@@ -27,7 +23,7 @@ body{
 }
 
 body h1{
-    margin-top: 0%;
+    margin-top: 4%;
     animation-name: body_h1;
     animation-duration: 4s;
     opacity: 1;
@@ -40,12 +36,89 @@ body p{
     opacity: 1;
 }
 
+.header-content{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .header-content img{
-    width: 11%;
+    width: 16%;
     padding: 2em;
+    margin-left: -15%;
     animation-name: header-content_img;
-    animation-duration: 3.5s;
+    animation-duration: 2.5s;
     opacity: 1;
+}
+
+.navbar{
+	display: flex;
+    align-items: center;
+    height: 10vh;
+       
+}
+
+.navbar ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	gap: 20px;
+    z-index: 1;
+    animation-name: navbar_ul;
+    animation-duration: 2.5s;
+    opacity: 1;
+}
+
+.nav-list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.nav-list li a{
+	display: block;
+	text-decoration: none;
+	color: rgb(247, 238, 177);
+	text-align: center;
+	padding: 5px;
+}
+
+.navbar a{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Impact, Haettenschweiler, sans-serif;
+	color: rgb(247, 238, 177);
+	text-shadow: -1px 1px 1px rgb(216, 24, 255);
+    
+}
+
+.navbar a:hover{
+	color: rgb(216, 24, 255);
+}
+
+.dropdown{
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+}
+
+.dropdown-content a{
+	display: block;
+ 	float: none;
+}
+
+.dropdown-content a:hover{
+	color:rgb(216, 24, 255);
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
 }
 
 .container{
@@ -78,7 +151,7 @@ body p{
     padding: 4px;
     text-decoration: none;
     text-shadow: -2px 1px 4px rgb(216, 24, 255);
-    color: rgb(255, 242, 160);;
+    color: rgb(255, 242, 160);
     transition: 0.2s ease-in-out;
     cursor: pointer;
     height: 30px;
@@ -120,7 +193,7 @@ footer p{
     align-items: center;
     justify-content: center;
     animation-name: load;
-    animation-duration: 2.8s;
+    animation-duration: 2.4s;
     opacity: 0;
 }
 
@@ -128,7 +201,7 @@ footer p{
     width: 11%;
     opacity: 0;
     animation-name: load_img;
-    animation-duration: 1.8s;
+    animation-duration: 1.5s;
 }
 
 @keyframes load {
@@ -203,3 +276,14 @@ footer p{
      }   
 }
 
+@keyframes navbar_ul {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }    
+     100%{
+        opacity: 1;
+     }   
+}
