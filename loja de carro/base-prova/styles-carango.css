@@ -33,6 +33,21 @@ body{
 	gap: 20px;
 }
 
+.nav-list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.nav-list li a{
+	display: block;
+	text-decoration: none;
+	color: rgb(230, 42, 255);
+	text-align: center;
+	padding: 5px;
+}
+
 .navbar a{
 	text-decoration: none;
 	font-size: 20px;
@@ -45,6 +60,28 @@ body{
 	color: rgb(189, 234, 255);
 }
 
+.dropdown{
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+}
+
+.dropdown-content a{
+	display: block;
+ 	float: none;
+}
+
+.dropdown-content a:hover{
+	color:rgb(189, 234, 255);
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
 
 p{
 	text-transform: uppercase;
@@ -57,7 +94,7 @@ p{
 	text-align: center;
 	position: absolute;
 	width: 40em;
-	top: 10%;
+	top: 25%;
 	left: 50%;
 	margin: 0 0 0 -20em;
 	text-shadow: -1px 1px 1px rgb(189, 234, 255);
