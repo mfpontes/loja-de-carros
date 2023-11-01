@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+   height: 100%;
+   background-position: center top;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: rgb(32, 32, 36);
+   color: white;
+}
+
+.container{
+   background-color: rgb(43, 43, 54);
+   display: flex;
+	 justify-content: center;
+   align-items: center;
+}
+
+.nav-bar{
+   display: flex;
+   align-items: center;
+   height: 10vh;
+}
+
+.nav-bar ul{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	gap: 20px;
+}
+
+.nav-list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.nav-list li{
+  float: left;
+}
+
+.nav-list li a{
+	display: block;
+	text-decoration: none;
+	color: white;
+  text-align: center;
+	padding: 10px;
+  cursor: pointer;
+}
+
+.nav-bar a:hover{
+	background-color: rgb(24, 113, 255);
+  padding: 10px;
+}
+
+.dropdown{
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+}
+
+.dropdown-content a{
+	display: block;
+ 	float: none;
+}
+
+.dropdown-content a:hover{
+	color:white;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+  background-color: rgb(24, 113, 255);
+  padding: 10px;
+}
+
+.compra{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.compra h1{
+  margin: 4%;
+}
+
+.models{
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.models ul{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	gap: 20px;
+}
+
+.models-type{
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.models-type li{
+  float: left;
+}
+
+.models-type li a{
+  display: block;
+	text-decoration: none;
+	color: white;
+  text-align: center;
+	padding: 10px;
+  cursor: pointer;
+}
+
+.down{
+	position: relative;
+  display: inline-block;
+}
+
+.down-content{
+	display: none;
+	position: absolute;
+}
+
+.down-content a{
+	display: block;
+ 	float: none;
+}
+
+.down-content a:hover{
+	color:white;
+}
+
+.down:hover .down-content{
+	display: block;
+  background-color: rgb(24, 113, 255);
+  padding: 10px;
+}
+
+.valores{
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+}
