@@ -13,6 +13,7 @@ body{
    background-repeat: no-repeat;
    background-size: cover;
    background-color: rgb(32, 32, 36);
+   text-align: center;
    color: white;
 }
 
@@ -60,6 +61,7 @@ body{
 .nav-bar a:hover{
 	background-color: rgb(24, 113, 255);
   padding: 10px;
+  border-radius: 12px;
 }
 
 .dropdown{
@@ -70,6 +72,7 @@ body{
 .dropdown-content{
 	display: none;
 	position: absolute;
+  background-color: rgb(24, 113, 255);
 }
 
 .dropdown-content a{
@@ -78,86 +81,86 @@ body{
 }
 
 .dropdown-content a:hover{
-	color:white;
+	background-color:rgb(71, 136, 240);
+  
 }
 
 .dropdown:hover .dropdown-content{
 	display: block;
-  background-color: rgb(24, 113, 255);
   padding: 10px;
+  border-radius: 12px;
 }
 
 .compra{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  margin: 10rem;
 }
 
-.compra h1{
-  margin: 4%;
-}
-
-.models{
+.carro{
   display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.carro button{
+  position: relative;
+  bottom: -4px;
+  left: 2%;
+  background: fixed;
+  background-color: rgb(24, 113, 255);
+  border-radius: 12px;
+  border: 2px solid white;
+  border-bottom: 10%;
+  padding: 4px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  height: 30px;
+  width: 180px;
+  margin: 10px 0;
+}
+
+.carro button:hover{
+  background-color: rgb(71, 136, 240);
+  height: 35px;
+  width: 200px;
+  margin: 7.5px 0;
+}  
+
+#name, #tel{
+  display: flex;
+  flex-direction: column;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  box-shadow: 1px 1px 6px #0000001c;
+  width: 180px;
+  padding: 10px;
+  padding-left: 10px;
+  margin-left: 40px;
+
+}
+
+.versoes{
+  display:inline-block;
   margin: 1rem;
   padding: 1rem;
 }
 
-.models ul{
-  display: flex;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
-	gap: 20px;
-}
-
-.models-type{
-  list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+.versoes p{
+  margin-top: 12px;
 }
 
 .models-type li{
-  float: left;
-}
-
-.models-type li a{
-  display: block;
-	text-decoration: none;
-	color: white;
-  text-align: center;
-	padding: 10px;
-  cursor: pointer;
-}
-
-.down{
-	position: relative;
-  display: inline-block;
-}
-
-.down-content{
-	display: none;
-	position: absolute;
-}
-
-.down-content a{
-	display: block;
- 	float: none;
-}
-
-.down-content a:hover{
-	color:white;
-}
-
-.down:hover .down-content{
-	display: block;
-  background-color: rgb(24, 113, 255);
-  padding: 10px;
-}
-
-.valores{
-  display: inline-block;
-  margin: 1rem;
-  padding: 1rem;
+  display:inline-block;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  margin-top: -14px;
 }

@@ -45,38 +45,43 @@
 			</header>
         </div>    
     
-     <section class="compra">
-
-        <h1>Conheça outras versões</h1>
-      
-      <nav class="models">
-        <ul class="models-type">
-          <li class="down">
-            <a href="#" class="dropbnt">
-              Ford 2023
-            </a> 
-            <div class="down-content">
-              <a href="">GLI</a>
-              <a href="">XEI</a>
-              <a href="">Atis Premium</a>
-              <a href="">GT_Sport</a>
-              <a href="">Supér Hibrido</a>
-              <a href="">Super Classic</a>
-            </div>
-          </li>
-        </ul>
-      </nav>  
-        
-      <div class="valores">
-        <img src="/img/ford-branco-removebg-preview.png" alt="Ford Eco branco para compra">
-				<p>Com frete Gratís, a partir de</p>
-				<h1>149.999,00</h1>
-				<p>Preço base: Ceará</p>
-				<button>Eu Quero</button>
+	<section class="compra">
+		<div class="carro">
+			<img src="/img/ford-branco-removebg-preview.png" alt="Ford Eco branco para compra" width="250px">
+			<p>Com frete Gratis, a partir de</p>
+			<br>
+			<h1>149.999,00</h1>
+			<br>
+			<p>Preço base: Ceará</p>
+			<button onclick="exibirForm()">Eu Quero</button>
+			<div id="Form1" class="botao" hidden>
+			<input id="name" type="text" name="name" placeholder="Nome" required>
+			<input id="tel" type="text" name="tel" placeholder="Telefone" required>
 			</div>
-
-		</section>
+		</div>
+		<br>
+		<div class="versoes">
+			<h1>Conheça outras versões</h1>
+			<p>Ford 2023</p>
+			<ul class="models-type">
+				<a href="#"><li>GLI</li></a>
+				<a href="#"><li>XEI</li></a>
+				<a href="#"><li>Atis Premium</li></a>
+				<a href="#"><li>GT_SPORT</li></a>
+				<a href="#"><li>Super Hibrido</li></a>
+				<a href="#"><li>Super Classic</li></a>
+			</ul>
+		</div>
+    </section>
         
 
     </body>   
 </html>    
+
+<script>
+function exibirForm(){
+	var form = document.querySelector("#Form1")
+	console.log(form)
+	form.removeAttribute('hidden')
+}
+</script>
