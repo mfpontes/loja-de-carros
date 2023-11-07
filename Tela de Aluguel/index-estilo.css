@@ -93,7 +93,7 @@ body{
 
 .compra{
   text-align: center;
-  margin: 10rem;
+  margin: 5rem;
 }
 
 .carro{
@@ -142,8 +142,8 @@ body{
   width: 180px;
   padding: 10px;
   padding-left: 10px;
-  margin-left: 40px;
-
+  margin: 10px;
+  margin-left: 34px;
 }
 
 .versoes{
