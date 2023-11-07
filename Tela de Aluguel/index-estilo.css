@@ -98,7 +98,7 @@ body{
 
 .carro{
   display: inline-block;
-  margin: 1rem;
+  margin: 2rem;
   padding: 1rem;
   border: 2px solid white;
   border-radius: 20px;
