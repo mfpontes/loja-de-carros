@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" data-bs-theme="dark">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index-estilo.css"/>
+		<title>Catálogo</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<nav class="nav-bar">
+					<ul class="nav-list">
+						<li>
+							<a href="#">
+								Home
+							</a>
+						</li>
+			
+						<li >
+							<a href="#">
+								Sobre nós
+							</a>
+						</li>
+			
+						<li>
+							<a href="#">
+								Contato
+							</a>
+						</li>
+			
+						<li class="dropdown">
+							<a href="#" class="dropbtn">
+								Modelos
+							</a>
+							<div class="dropdown-content">
+								<a href="#">Ford</a>
+								<a href="#">Volks</a>
+								<a href="#">Fiat</a>
+								<a href="#">Toyota</a>
+							</div>
+						</li>
+					</ul>
+				   </nav>	
+			</header>
+        </div>    
+    
+	<section class="compra">
+		<div class="carro">
+			<h1>Ford Eco Branco</h1>
+			<img src="/img/ford-branco-removebg-preview.png" alt="Ford Eco branco para compra" width="240px"/>
+			<p>Com frete Gratis, a partir de</p>
+			<br/>
+			<h2>149.999,00</h2>
+			<br/>
+			<p>Preço base: Ceará</p>
+			<button id="botao" onclick="exibirForm()">Eu Quero</button>
+			<div id="Form1" class="forma" hidden="Form1">
+			<input id="name" type="text" name="name" placeholder="Nome" required="name"/>
+			<input id="tel" type="text" name="tel" placeholder="Telefone" required="tel"/>
+			<button>Enviar</button>
+			</div>
+		</div>
+		<br/>
+		<div class="versoes">
+			<h1>Conheça outras versões</h1>
+			<p>Ford 2023</p>
+			<ul class="models-type">
+				<a href="#"><li>GLI</li></a>
+				<a href="#"><li>XEI</li></a>
+				<a href="#"><li>Atis Premium</li></a>
+				<a href="#"><li>GT_SPORT</li></a>
+				<a href="#"><li>Super Hibrido</li></a>
+				<a href="#"><li>Super Classic</li></a>
+			</ul>
+		</div>
+    </section>
+        
+
+    </body>   
+		
+		<script>
+			function exibirForm(){
+				var form = document.querySelector("#Form1")
+	console.log(form)
+	form.removeAttribute('hidden')
+	var button = document.querySelector("#botao")
+	button.style.display = 'none'
+}
+
+</script>
+</html>    
